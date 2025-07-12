@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lace UP - Shopping Cart</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;700;800"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  </head>
+  <body
+    class="bg-[#141613] text-white"
+    style="font-family: 'Plus Jakarta Sans', 'Noto Sans', sans-serif"
+  >
+    <div class="min-h-screen flex flex-col">
+      <!-- Navigation -->
+      <header
+        class="flex justify-between items-center p-5 border-b border-[#2f352c]"
+      >
+        <h1 class="text-xl font-bold">lace UP</h1>
+        <nav class="flex gap-6 text-sm font-medium">
+          <a href="#">New & Featured</a>
+          <a href="#">Men</a>
+          <a href="#">Women</a>
+          <a href="#">Kids</a>
+          <a href="#">Accessories</a>
+          <a href="#">Sale</a>
+        </nav>
+      </header>
+
+      <!-- Cart Items -->
+      <main class="flex-grow container mx-auto p-5 max-w-4xl">
+        <a
+          href="product.html"
+          class="inline-flex items-center text-[#b5dba3] hover:text-[#d7f2bd] font-medium text-sm mb-4"
+        >
+          <!-- Left arrow icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-4 w-4 mr-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          Back to Products
+        </a>
+        <!-- Shopping Cart Heading -->
+        <p
+          class="text-white tracking-light text-[32px] font-bold leading-tight min-w-72"
+        >
+          Shopping Cart
+        </p>
+
+        <!-- Cart Item Start -->
+        <div class="flex gap-4 bg-[#141613] px-4 py-3 justify-between">
+          <div class="flex items-start gap-4">
+            <div
+              class="bg-center bg-no-repeat aspect-square bg-cover rounded-lg size-[70px]"
+              style="
+                background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMKV2ov3s967v-XLnkETAunktbnMfXxrGx1mQxAVzmdD9swXSxlitTUHtqv-gscN96eTHIPXZIV9F6PKL13Kkutsc3qjb0U7-1JZtcJosSw147-K9BJCieZkbhRBXT0-aPsj0grziTNRHkidhrmI9ccoxTn_wPAR_pi1J4TYRJ-YEO4VPe9Fnn2QcCZv3aOM4eGkqJ7SvhQj9Uvqm6KWL76NO_8e_o98H91jLkCkgO76LgYNR0TFqX5rWK9-DVvGM1IlfF6v1YlumA');
+              "
+            ></div>
+            <div class="flex flex-1 flex-col justify-center">
+              <p class="text-white text-base font-medium">Nike Air Max 90</p>
+              <p class="text-[#a8b2a3] text-sm">Quantity: 1</p>
+              <div class="flex gap-2 mt-1">
+                <select
+                  class="bg-[#1a1e1a] text-white border border-[#2f352c] text-sm rounded px-2 py-1"
+                >
+                  <option>Size: 7</option>
+                  <option>Size: 8</option>
+                  <option selected>Size: 9</option>
+                  <option>Size: 10</option>
+                </select>
+                <select
+                  class="bg-[#1a1e1a] text-white border border-[#2f352c] text-sm rounded px-2 py-1"
+                >
+                  <option>Black</option>
+                  <option selected>White</option>
+                  <option>Red</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <p class="text-white text-base cart-price">$402</p>
+          </div>
+        </div>
+        <!-- Cart Item End -->
+
+        <!-- Shipping Info Section -->
+        <div
+          class="bg-gradient-to-br from-[#1f2420] to-[#141613] border border-[#2f352c] rounded-xl p-5 mb-6 shadow-lg"
+        >
+          <div class="flex items-start gap-4">
+            <div class="bg-[#2f352c] p-3 rounded-full">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-6 h-6 text-green-400"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 3h13v13H3V3zm13 0l5 5v8h-5V3zM8 21a2 2 0 100-4 2 2 0 000 4zm9-2a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+            <div class="flex-1">
+              <h4 class="text-white font-semibold text-base mb-1">
+                Shipping Policy
+              </h4>
+              <p class="text-[#a8b2a3] text-sm leading-relaxed">
+                <span class="text-green-400 font-semibold">Free Shipping</span>
+                on orders above
+                <span class="font-bold text-white">$400</span>.<br />
+                A flat <span class="text-white font-bold">$30</span> shipping
+                fee applies below this limit.<br />
+                Shipping charges will be calculated automatically at checkout.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="mt-8">
+          <h3 class="text-lg font-bold mb-4">Order Summary</h3>
+          <div class="space-y-2">
+            <div class="flex justify-between">
+              <span class="text-[#a8b2a3]">Subtotal</span
+              ><span id="subtotal">$120</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-[#a8b2a3]">Shipping</span
+              ><span id="shipping">$30</span>
+            </div>
+            <div class="flex justify-between">
+              <span class="text-[#a8b2a3]">Tax</span><span id="tax">$20</span>
+            </div>
+            <div class="flex justify-between font-bold text-lg">
+              <span>Total</span><span id="total">$150</span>
+            </div>
+          </div>
+
+          <!-- Coupon Code -->
+          <div class="px-4 pb-2">
+            <label class="text-white text-sm font-medium">Coupon Code</label>
+            <div class="flex mt-1">
+              <input
+                type="text"
+                id="coupon"
+                class="w-full px-3 py-2 rounded-l-lg bg-[#1a1e1a] text-white border border-[#2f352c] outline-none"
+                placeholder="Enter your code"
+              />
+              <button
+                onclick="applyCoupon()"
+                class="bg-[#b5dba3] text-[#141613] font-bold px-4 py-2 rounded-r-lg hover:bg-[#c9e4b5]"
+              >
+                Apply
+              </button>
+            </div>
+            <p id="couponMessage" class="text-green-400 text-sm mt-1 hidden">
+              Coupon Applied!
+            </p>
+          </div>
+
+          <!-- Payment Methods -->
+          <div class="px-4 pb-4">
+            <label class="text-white text-sm font-medium mb-1 block"
+              >Payment Method</label
+            >
+            <select
+              class="w-full bg-[#1a1e1a] text-white px-3 py-2 rounded-lg border border-[#2f352c]"
+            >
+              <option>Credit Card</option>
+              <option>Debit Card</option>
+              <option>UPI</option>
+              <option>Cash on Delivery</option>
+            </select>
+          </div>
+
+          <!-- Checkout Button -->
+          <div class="mt-6">
+            <a href="checkout.html">
+              <button
+                class="flex w-full justify-center bg-[#b5dba3] text-[#141613] font-bold py-3 rounded-full hover:bg-[#c9e4b5]"
+              >
+                Proceed to Checkout
+              </button>
+            </a>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="text-center text-xs text-[#a8b2a3] p-4 border-t border-[#2f352c]"
+      >
+        &copy; 2025 lace UP. All rights reserved.
+      </footer>
+    </div>
+
+    <script>
+      // ✅ Dynamically get subtotal from cart item(s)
+      let subtotal = 0;
+      document.querySelectorAll(".cart-price").forEach((el) => {
+        subtotal += parseFloat(el.innerText.replace("$", ""));
+      });
+      const subtotalOriginal = subtotal;
+      let tax = 20;
+      let shippingFee = 30;
+      let discount = 0;
+
+      function updateSummary() {
+        const discountedSubtotal = Math.max(subtotal - discount, 0);
+        const shipping = discountedSubtotal + tax >= 400 ? 0 : shippingFee;
+        const total = discountedSubtotal + tax + shipping;
+
+        document.getElementById(
+          "subtotal"
+        ).innerText = `$${discountedSubtotal.toFixed(2)}`;
+        document.getElementById("tax").innerText = `$${tax}`;
+        document.getElementById("shipping").innerText =
+          shipping === 0 ? "Free" : `$${shipping}`;
+        document.getElementById("total").innerText = `$${total.toFixed(2)}`;
+      }
+
+      function applyCoupon() {
+        const code = document
+          .getElementById("coupon")
+          .value.trim()
+          .toUpperCase();
+        const msg = document.getElementById("couponMessage");
+        let message = "";
+
+        switch (code) {
+          case "NIKE10":
+            discount = subtotal * 0.1;
+            message = "NIKE10 Applied: 10% OFF";
+            break;
+          case "MINE100":
+            discount = 100;
+            message = "MINE100 Applied: $100 OFF";
+            break;
+          case "FIRST20":
+            discount = subtotal * 0.2;
+            message = "FIRST20 Applied: 20% OFF";
+            break;
+          case "SNEAKER1200":
+            discount = 120;
+            message = "SNEAKER1200 Applied: $120 OFF";
+            break;
+          default:
+            discount = 0;
+            msg.classList.remove("text-green-400");
+            msg.classList.add("text-red-400");
+            msg.innerText = "Invalid coupon 😢";
+            msg.classList.remove("hidden");
+            updateSummary();
+            return;
+        }
+
+        msg.classList.remove("hidden", "text-red-400");
+        msg.classList.add("text-green-400");
+        msg.innerText = message;
+        updateSummary();
+      }
+
+      updateSummary();
+    </script>
+  </body>
+</html>
