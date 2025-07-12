@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lace UP - Order Confirmation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&display=swap"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeInUp {
+        animation: fadeInUp 0.6s ease-out;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-[#141613] text-white min-h-screen flex flex-col items-center justify-center px-4"
+    style="font-family: 'Plus Jakarta Sans', sans-serif"
+  >
+    <div
+      class="max-w-xl w-full bg-[#1a1e1a] p-6 rounded-xl border border-[#2f352c] shadow-lg text-center animate-fadeInUp"
+    >
+      <!-- Success Icon -->
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="mx-auto mb-4 w-16 h-16 text-green-400"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+        />
+      </svg>
+
+      <!-- Thank You Text -->
+      <h1 class="text-2xl font-bold mb-2">Thank you for your order!</h1>
+      <p class="text-[#a8b2a3] mb-4">
+        Your payment was successful and your sneakers are being prepped for
+        delivery. 🚚✨
+      </p>
+
+      <!-- Order Summary -->
+      <div
+        class="bg-[#141613] rounded-lg border border-[#2f352c] p-4 text-sm mb-4 text-left"
+      >
+        <h2 class="text-white font-semibold mb-2">Order Summary</h2>
+
+        <div
+          class="flex justify-between text-[#a8b2a3] hover:text-white transition duration-300"
+        >
+          <span>Subtotal</span>
+          <span>$120</span>
+        </div>
+        <div
+          class="flex justify-between text-[#a8b2a3] hover:text-white transition duration-300"
+        >
+          <span>Shipping</span>
+          <span>$30</span>
+        </div>
+        <div
+          class="flex justify-between text-[#a8b2a3] hover:text-white transition duration-300"
+        >
+          <span>Tax</span>
+          <span>$20</span>
+        </div>
+        <div
+          class="flex justify-between text-white font-bold mt-2 hover:text-green-400 transition duration-300"
+        >
+          <span>Total Paid</span>
+          <span>$170</span>
+        </div>
+
+        <!-- Delivery Estimate -->
+        <div class="mt-4 border-t border-[#2f352c] pt-3">
+          <p class="text-green-400 font-medium animate-pulse">
+            Estimated Delivery:
+            <span class="text-white">3–5 Business Days</span>
+          </p>
+          <p class="text-[#a8b2a3] text-xs mt-1">
+            We’ll notify you via email once your order is shipped.
+          </p>
+        </div>
+      </div>
+
+      <!-- Continue Shopping -->
+      <a
+        href="homepage.html"
+        class="inline-block mt-4 bg-gradient-to-r from-[#b5dba3] to-[#a2cf8d] text-[#141613] font-semibold px-6 py-2 rounded-full transition-all duration-500 ease-in-out transform hover:scale-110 hover:brightness-110 hover:shadow-[0_8px_30px_rgba(181,219,163,0.4)] hover:text-[#0c0f0b]"
+      >
+        Continue Shopping
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-xs text-[#a8b2a3] mt-10">
+      &copy; 2025 lace UP. All rights reserved.
+    </footer>
+  </body>
+</html>
