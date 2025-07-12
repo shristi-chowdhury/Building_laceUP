@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Reset Password - Lace UP</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body
+    class="bg-[#141613] text-white font-sans flex items-center justify-center min-h-screen"
+  >
+    <div class="bg-[#20241e] p-8 rounded-xl w-[90%] max-w-md shadow-lg">
+      <h2 class="text-2xl font-bold mb-4">Forgot your password?</h2>
+      <p class="text-sm text-[#a8b2a3] mb-6">
+        Enter your email to reset your password.
+      </p>
+      <form>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="w-full p-3 rounded-md bg-[#141613] text-white border border-[#454e41] placeholder:text-[#a8b2a3] focus:outline-none mb-4"
+          required
+        />
+        <button
+          type="submit"
+          class="w-full bg-[#b5dba3] text-[#141613] font-bold py-2 px-4 rounded-full hover:bg-lime-300 transition-all"
+        >
+          Send Reset Link
+        </button>
+      </form>
+      <a
+        href="login.html"
+        class="block mt-4 text-sm underline text-[#a8b2a3] hover:text-white text-center"
+      >
+        Back to Login
+      </a>
+    </div>
+  </body>
+</html>
